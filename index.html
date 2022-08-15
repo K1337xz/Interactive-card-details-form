@@ -38,7 +38,9 @@
 					<h1 class="cardNumber">0000 0000 0000 0000</h1>
 					<div class="nameexp">
 						<p class="nameCard">Jane Appleseed</p>
-						<p class="expDate">00/00</p>
+						<p class="monthC">00</p>
+						<p>/</p>
+						<p class="yearC">00</p>
 					</div>
 				</div>
 				<div class="secpage">
@@ -60,6 +62,7 @@
 						name="cardnum"
 						id="cardnum"
 						placeholder="e.g. 1234 5678 9123 0000"
+						maxlength="16"
 					/>
 					<p class="errorNum"></p>
 					<br />
@@ -70,14 +73,23 @@
 						id="month"
 						name="month"
 						placeholder="MM"
+						maxlength="2"
+						max="12"
 					/>
 					<label for="year"></label>
-					<input type="text" name="year" id="year" placeholder="YY" />
+					<input
+						type="text"
+						name="year"
+						id="year"
+						placeholder="YY"
+						maxlength="2"
+					/>
 					<input
 						type="text"
 						name="cvc"
 						id="cvcinput"
 						placeholder="e.g. 123"
+						maxlength="3"
 					/>
 					<div class="errors">
 						<p class="errorMY"></p>

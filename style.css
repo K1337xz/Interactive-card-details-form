@@ -67,7 +67,16 @@ body {
 	text-transform: uppercase;
 }
 .nameexp p:nth-child(2) {
-	margin-left: 12rem;
+	margin-left: 23rem;
+	position: fixed;
+}
+.nameexp p:nth-child(3) {
+	margin-left: 25rem;
+	position: fixed;
+}
+.nameexp p:nth-child(4) {
+	margin-left: 26rem;
+	position: fixed;
 }
 .secpage {
 	color: hsl(0, 0%, 100%);
@@ -158,7 +167,7 @@ body {
 	margin-left: 4rem;
 }
 
-#cvc {
+#cvcinput {
 	width: 195px;
 	height: 45px;
 	border: 1px solid hsl(279, 6%, 55%);
