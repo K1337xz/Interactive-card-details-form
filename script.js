@@ -1,2 +1,9 @@
-const heh = document.querySelector("#cardholder");
-console.log(heh);
+const cardNumber = document.querySelector(".cardNumber");
+const cardName = document.querySelector(".nameCard");
+const expDate = document.querySelector(".expDate");
+const cvc = document.querySelector(".cvc");
+let cardHolder = document.querySelector("#cardholder");
+let cardnumInput = document.querySelector("#cardnum");
+let cardMonth = document.querySelector("#month");
+let cardCvc = document.querySelector("#cvcinput");
+let cardYear = document.querySelector("#year");
