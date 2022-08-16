@@ -194,7 +194,7 @@ body {
 }
 .errors {
 	display: flex;
-	width: 270px;
+	width: 400px;
 	justify-content: space-between;
 }
 .forms {
@@ -219,7 +219,9 @@ body {
 .errorNum {
 	color: hsl(0, 100%, 66%);
 }
-else {
-	errorNum.innerHTML = ``;
-	cardnumInput.id = `cardnum`;
+#wrongcvc {
+	width: 195px;
+	height: 45px;
+	border: 2px solid hsl(0, 100%, 66%);
+	border-radius: 10px;
 }

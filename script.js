@@ -66,14 +66,28 @@ function chcekForm(e) {
 	} else if (cardMonth.value > 0 && cardYear.value === ``) {
 		cardMonth.id = `month`;
 		cardYear.id = `errorMonthYear`;
+		errorMonth.innerHTML = `Can't be blank`;
 	} else if (cardYear.value > 0 && cardMonth.value === ``) {
 		cardMonth.id = `errorMonthYear`;
 		cardYear.id = `year`;
-	} else {
+		errorMonth.innerHTML = `Can't be blank`;
+	} else if (cardYear.value > 0 && cardMonth.value > 0) {
 		cardMonth.id = `month`;
 		cardYear.id = `year`;
 		errorMonth.innerHTML = ``;
 	}
+
+	if (cardCvc.value === ``) {
+		errorCV.innerHTML = `Can't be blank`;
+		cardCvc.id = `wrongcvc`;
+	} else if (cardCvc.value < 3) {
+		errorCV.innerHTML = `CVC Must have 3 numbers`;
+		cardCvc.id = `wrongcvc`;
+	} else {
+		errorCV.innerHTML = ``;
+		cardCvc.id = `cvcinput`;
+	}
+
 	e.preventDefault();
 }
 
