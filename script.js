@@ -7,7 +7,8 @@ const cardY = document.querySelector(".yearC");
 const inputs = document.querySelectorAll(".forms input");
 const errorNum = document.querySelector(".errorNum");
 const errorMonth = document.querySelector(".errorMY");
-const errorYear = document.querySelector(".errorCv");
+const errorCV = document.querySelector(".errorCv");
+const confirmButton = document.querySelector(".confirmButton");
 let cardHolder = document.querySelector("#cardholder");
 let cardnumInput = document.querySelector("#cardnum");
 let cardMonth = document.querySelector("#month");
@@ -43,3 +44,37 @@ for (let i = 0; i < inputs.length; i++) {
 		}
 	});
 }
+
+function chcekForm(e) {
+	const reg = /^[0-9]+$/i;
+	if (cardnumInput.value === ``) {
+		errorNum.innerHTML = `Card numbers cannot be empty`;
+		cardnumInput.id = `errorBorder`;
+	} else if (!cardnumInput.value.match(reg)) {
+		errorNum.innerHTML = `Wrong format, numbers only`;
+		cardnumInput.id = `errorBorder`;
+	} else {
+		errorNum.innerHTML = ``;
+		cardnumInput.id = `errorBorder`;
+		cardnumInput.id = `cardnum`;
+	}
+
+	if (cardMonth.value === `` && cardYear.value === ``) {
+		errorMonth.innerHTML = `Can't be blank`;
+		cardMonth.id = `errorMonthYear`;
+		cardYear.id = `errorMonthYear`;
+	} else if (cardMonth.value > 0 && cardYear.value === ``) {
+		cardMonth.id = `month`;
+		cardYear.id = `errorMonthYear`;
+	} else if (cardYear.value > 0 && cardMonth.value === ``) {
+		cardMonth.id = `errorMonthYear`;
+		cardYear.id = `year`;
+	} else {
+		cardMonth.id = `month`;
+		cardYear.id = `year`;
+		errorMonth.innerHTML = ``;
+	}
+	e.preventDefault();
+}
+
+confirmButton.addEventListener("click", chcekForm);
