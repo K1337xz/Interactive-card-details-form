@@ -163,7 +163,19 @@ body {
 	width: 435px;
 	height: 45px;
 }
+#errorBorders {
+	border: 2px solid hsl(0, 100%, 66%);
+	border-radius: 10px;
+	width: 435px;
+	height: 45px;
+}
 #errorMonthYear {
+	border: 2px solid hsl(0, 100%, 66%);
+	border-radius: 10px;
+	width: 100px;
+	height: 45px;
+}
+#errorYear {
 	border: 2px solid hsl(0, 100%, 66%);
 	border-radius: 10px;
 	width: 100px;
@@ -225,3 +237,11 @@ body {
 	border: 2px solid hsl(0, 100%, 66%);
 	border-radius: 10px;
 }
+.blankcardholder {
+	color: hsl(0, 100%, 66%);
+}
+cardMonth.value
+cardYear.value
+cardCvc.value
+cardnumInput.value
+cardHolder.value;
