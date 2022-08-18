@@ -57,7 +57,7 @@ for (let i = 0; i < inputs.length; i++) {
 
 function chcekForm(e) {
 	const reg = /^[0-9]+$/i;
-	const regName = /^[a-zA-Z\s]*$/;
+	const regName = /^[a-zA-Za-zżźćńółęąśŻŹĆĄŚĘŁÓŃ\s]*$/;
 	if (cardnumInput.value === ``) {
 		errorNum.innerHTML = `Card numbers cannot be empty`;
 		cardnumInput.id = `errorBorders`;
