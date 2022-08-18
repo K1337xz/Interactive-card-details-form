@@ -270,6 +270,7 @@ body {
 		border-radius: 9px;
 		color: hsl(0, 0%, 100%);
 		box-shadow: 32px 36px 73px -22px rgb(0 0 0);
+		z-index: 999;
 	}
 	.firstcard img {
 		width: 50px;
@@ -298,6 +299,7 @@ body {
 		letter-spacing: 5px;
 		box-shadow: 11px 2px 18px 9px rgb(0 0 0);
 		border-radius: 9px;
+		z-index: 1;
 	}
 	.leftside {
 		display: flex;
@@ -464,6 +466,7 @@ body {
 		border-radius: 9px;
 		color: hsl(0, 0%, 100%);
 		box-shadow: 32px 36px 73px -22px rgb(0 0 0);
+		z-index: 999;
 	}
 	.firstcard img {
 		width: 50px;
@@ -492,6 +495,7 @@ body {
 		letter-spacing: 5px;
 		box-shadow: 11px 2px 18px 9px rgb(0 0 0);
 		border-radius: 9px;
+		z-index: 1;
 	}
 	.leftside {
 		display: flex;
