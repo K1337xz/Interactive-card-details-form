@@ -338,15 +338,12 @@ body {
 	}
 	.nameexp p:nth-child(2) {
 		margin-left: 13.2rem;
-		position: fixed;
 	}
 	.nameexp p:nth-child(3) {
 		margin-left: 14.5rem;
-		position: fixed;
 	}
 	.nameexp p:nth-child(4) {
 		margin-left: 15rem;
-		position: fixed;
 	}
 	.firstcard img {
 		margin-top: 1rem;
@@ -535,15 +532,12 @@ body {
 	}
 	.nameexp p:nth-child(2) {
 		margin-left: 10.2rem;
-		position: fixed;
 	}
 	.nameexp p:nth-child(3) {
 		margin-left: 11.5rem;
-		position: fixed;
 	}
 	.nameexp p:nth-child(4) {
 		margin-left: 12rem;
-		position: fixed;
 	}
 	.firstcard img {
 		margin-top: 1rem;
