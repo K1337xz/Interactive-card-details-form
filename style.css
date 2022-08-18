@@ -334,13 +334,7 @@ body {
 		text-transform: uppercase;
 	}
 	.nameexp p:nth-child(2) {
-		margin-left: 13.2rem;
-	}
-	.nameexp p:nth-child(3) {
-		margin-left: 14.5rem;
-	}
-	.nameexp p:nth-child(4) {
-		margin-left: 15rem;
+		margin-left: 3rem;
 	}
 	.firstcard img {
 		margin-top: 1rem;
@@ -530,13 +524,7 @@ body {
 		text-transform: uppercase;
 	}
 	.nameexp p:nth-child(2) {
-		margin-left: 10.2rem;
-	}
-	.nameexp p:nth-child(3) {
-		margin-left: 11.5rem;
-	}
-	.nameexp p:nth-child(4) {
-		margin-left: 12rem;
+		margin-left: -1rem;
 	}
 	.firstcard img {
 		margin-top: 1rem;
