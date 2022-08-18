@@ -57,6 +57,9 @@ body {
 	margin-top: 3rem;
 	font-weight: 500;
 }
+.nameCard {
+	width: 164px;
+}
 .nameexp {
 	display: inline-flex;
 	margin-top: 2rem;
@@ -66,14 +69,9 @@ body {
 	text-transform: uppercase;
 }
 .nameexp p:nth-child(2) {
-	margin-left: 21rem;
+	margin-left: 13rem;
 }
-.nameexp p:nth-child(3) {
-	margin-left: 23rem;
-}
-.nameexp p:nth-child(4) {
-	margin-left: 24rem;
-}
+
 .secpage {
 	color: hsl(0, 0%, 100%);
 	display: flex;
